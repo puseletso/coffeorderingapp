@@ -1,0 +1,123 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.example.android.coffeorderingapp.MainActivity">
+
+        <EditText
+            android:id="@+id/enter_name_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_name"
+            android:inputType="textCapWords"
+
+            />
+
+
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="@string/toppings"
+          />
+
+
+        <CheckBox
+            android:id="@+id/Whipped_cream_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:paddingLeft="24dp"
+            android:text="@string/whipped_cream"
+            android:textSize="16sp"
+
+
+
+
+            />
+
+        <CheckBox
+            android:id="@+id/Choclate_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:paddingLeft="24dp"
+            android:text="Chocklate"
+            android:textSize="16sp"/>
+
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:id="@+id/text_label_qty"
+            android:text="@string/quantity"
+      />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <!--increment button -->
+
+
+
+            <Button
+
+                android:onClick="increment"
+                android:text="+"
+                style ="@style/squar_button"/>
+
+            <!--display number of orderd cups-->
+            <TextView
+                android:id="@+id/text_qty_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:fontFamily="sans-serif-medium"
+                android:padding="8dp"
+                android:text="2"
+                android:textColor="#000000"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <!--button decremet number of orderd coffe cups -->
+            <Button
+                android:onClick="decrement"
+                android:text="-"
+                android:textStyle="bold"
+                style ="@style/squar_button"/>
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:onClick="submitOrder"
+            android:text="@string/order"
+            android:id="@+id/button"
+            style ="@style/squar_button"/>
+
+
+        <Button
+            android:onClick="clearOrder"
+            android:text="clear"
+
+
+            style ="@style/squar_button"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

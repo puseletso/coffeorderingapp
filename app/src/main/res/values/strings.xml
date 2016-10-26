@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">coffe ordering app</string>
+    <string name="order">order</string>
+    <string name="enter_name">enter name</string>
+    <string name="toppings">Toppings</string>
+    <string name="whipped_cream">Whipped cream</string>
+    <string name="quantity">quantity</string>
+
+
+
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">aplicación café de pedido</string>
+    <string name="order">orden</string>
+    <string name="enter_name">Ingrese su nombre</string>
+    <string name="toppings">coberturas</string>
+    <string name="whipped_cream">Crema batida</string>
+    <string name="quantity">cantidad</string>
+
+</resources>
